@@ -1,4 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Eczar:wght@400;600;700;800&display=swap");
 * {
-  color: darkslategray;
-  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eczar", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background: url(img1.jpg) no-repeat; */
+  background-color: azure;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #de354c;
+  color: #283747;
+}
+nav a {
+  color: #283747;
+  word-spacing: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 3px 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+nav a:hover {
+  color: #de354c;
+  background: #283747;
+}
+
+.logo {
+  position: relative;
+  font-family: "Bebas Neue", "Eczar", sans-serif;
+  color: #292826;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.header-topic {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.header-topic .tagline h2 {
+  color: #3c1874;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.header-topic .tagline span {
+  color: #932432;
+}
+
+.header-topic .tagline p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#INTRO {
+  max-width: 650px;
+  margin: 60px 100px;
+  width: 100%;
+  background: bisque;
+}
+
+#INTRO h2 {
+  color: #932432;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
