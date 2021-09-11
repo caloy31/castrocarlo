@@ -8,7 +8,7 @@
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 html {
-  background: #aaaaaa;
+  background: #babdbf;
 }
 
 #container {
@@ -21,6 +21,7 @@ html {
 }
 
 #container header {
+  display: block;
   width: 50%;
   padding-bottom: 50px;
 }
@@ -28,11 +29,15 @@ html {
   font-size: 3em;
   font-weight: bolder;
   padding: 10px;
-  border: 3px solid #001f3f;
+  border-bottom: 3px solid #020202;
+  background-image: url("images/0.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #container header h2 span {
   font-weight: lighter;
+  color: aliceblue;
 }
 
 #container #image-box {
