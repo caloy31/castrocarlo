@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap");
 
+:root {
+  --red: #e12301;
+}
 * {
   font-family: "Chivo", sans-serif;
   margin: 0;
@@ -10,4 +13,109 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--red);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: #ffa600;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(red, green, blue, 1);
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #ffa600;
+}
+
+header .logo i {
+  padding-right: 0.5rem;
+  color: var(--red);
+}
+
+header #navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #ffa600;
+}
+
+header #navbar a:hover {
+  color: var(--red);
+}
+
+#menu-bar {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ffa600;
+  border: 0.1rem solid #ffa600;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+
+@media (max-width: 830px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 736px) {
+  #menu-bar {
+    display: initial;
+  }
+  header #navbar {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    background: #fff;
+    border-top: 0.1rem solid rgba(red, green, blue, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #navbar .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header #navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: 0.2rem solid rgba(red, green, blue, 0.1);
+    border-left: 0.5rem solid var(--red);
+    background: #fffa8a;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
 }
