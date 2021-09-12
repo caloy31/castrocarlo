@@ -274,6 +274,32 @@ header #navbar a:hover {
   transform: scale(1.2);
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+footer .share h3 {
+  font-size: 1.7rem;
+  color: rgb(43, 42, 42);
+  padding: 1rem 0;
+}
+
+.share a {
+  color: #e12301;
+  transition: 0.3s;
+  position: relative;
+  font-size: 25px;
+  transition-property: transform;
+}
+
+.share a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.share a:hover {
+  transform: scale(1.5);
+}
+
 @media (max-width: 830px) {
   html {
     font-size: 55%;
