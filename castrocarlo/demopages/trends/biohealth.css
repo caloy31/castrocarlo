@@ -8,7 +8,8 @@
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 html {
-  background: #babdbf;
+  background: url("images/mdbg.jpeg");
+  background-position: center;
 }
 
 #container {
@@ -17,7 +18,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 50px 30px 0 20px;
+  margin: 40px 20px 0 20px;
 }
 
 #container header {
@@ -30,14 +31,12 @@ html {
   font-weight: bolder;
   padding: 10px;
   border-bottom: 3px solid #020202;
-  background-image: url("images/0.jpg");
-  background-size: cover;
-  background-position: center;
+  color: rgb(4, 69, 126);
 }
 
 #container header h2 span {
   font-weight: lighter;
-  color: aliceblue;
+  color: #020202;
 }
 
 #container #image-box {
@@ -64,14 +63,14 @@ html {
 
 #container #btn {
   margin: 40px 0 75px 0;
-  background: #dddddd;
+  background: rgb(4, 69, 126);
   padding: 15px 40px;
   border-radius: 5px;
   transition-property: transform;
 }
 
 #container #btn a {
-  color: #001f3f;
+  color: #dfe5eb;
   font-size: 1.5em;
   text-decoration: none;
   font-weight: bolder;
