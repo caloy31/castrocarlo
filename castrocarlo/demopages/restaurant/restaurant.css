@@ -28,11 +28,30 @@ html {
 }
 
 body {
-  background: #ffa600;
+  background: #ffd684;
 }
 
 section {
   padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border: 1px solid var(--red);
+  color: var(--red);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+  transition: transform;
+}
+
+.btn:hover {
+  transform: scale(1.2);
 }
 
 header {
@@ -86,13 +105,14 @@ header #navbar a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
-  background: url(Images/pizabg.png) no-repeat;
+  background: url(..Images/homeimg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .home .content {
   flex: 1 1 40rem;
+  padding-top: 6.5rem;
 }
 
 .home .image {
@@ -101,6 +121,29 @@ header #navbar a:hover {
 
 .home .image img {
   width: 100%;
+  padding: 1rem;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(0rem);
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  color: black;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: rgb(43, 42, 42);
+  padding: 1rem 0;
 }
 
 @media (max-width: 830px) {
@@ -109,6 +152,9 @@ header #navbar a:hover {
   }
 
   header {
+    padding: 2rem;
+  }
+  section {
     padding: 2rem;
   }
 }
