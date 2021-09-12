@@ -219,7 +219,7 @@ header #navbar a:hover {
 .order .row {
   padding: 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  background: #df4a30;
+  border: 2rem #df4a30;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -253,9 +253,9 @@ header #navbar a:hover {
   padding: 1rem;
   margin: 1rem 0;
   font-size: 1.7rem;
-  color: #333;
+  color: rgb(170, 6, 6);
   text-transform: none;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border: 0.1rem solid rgba(189, 40, 40, 0.3);
   border-radius: 0.5rem;
   width: 49%;
 }
@@ -271,7 +271,7 @@ header #navbar a:hover {
 }
 
 .order .row form .btn:hover {
-  background: var(--red);
+  transform: scale(1.2);
 }
 
 @media (max-width: 830px) {
