@@ -58,7 +58,7 @@ html {
   transition-property: transform;
 }
 #container #image-box .column img:hover {
-  transform: scale(90%);
+  transform: scale(105%);
 }
 
 #container #btn {
