@@ -1,0 +1,114 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: #588887;
+}
+
+.headings {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #1c1b1b;
+}
+
+.headings span {
+  color: #fcfcfc;
+}
+
+.schedule .row {
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 2rem #211e1e;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-radius: 1rem;
+}
+
+.schedule .row .image {
+  flex: 1 1 30rem;
+}
+
+.schedule .row .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.schedule .row form {
+  flex: 1 1 50rem;
+  padding: 1rem;
+}
+
+.schedule .row form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.schedule .row form .inputBox input,
+.schedule .row form textarea {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color: rgb(12, 12, 12);
+  text-transform: none;
+  border: 0.1rem solid rgba(189, 40, 40, 0.3);
+  border-radius: 0.5rem;
+  width: 49%;
+}
+.schedule .row form textarea {
+  width: 100%;
+  resize: none;
+  height: 5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border: 1px solid black;
+  color: wheat;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+  transition: transform;
+  width: 49%;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.schedule .row form .btn {
+  background: none;
+}
+
+.schedule .row form .btn:hover {
+  transform: scale(1.2);
+}
