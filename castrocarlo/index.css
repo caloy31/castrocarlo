@@ -19,7 +19,7 @@ header {
   position: relative;
   top: 0;
   width: 100%;
-  padding: 0px 100px;
+  padding: 0px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ header {
 
 header .logo {
   font-size: 100px;
-  font-weight: 800;
+  font-weight: lighter;
   color: #283747;
   text-transform: uppercase;
   letter-spacing: 15px;
