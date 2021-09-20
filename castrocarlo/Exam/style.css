@@ -89,6 +89,8 @@ header .logo i {
 
 header img {
   height: 100px;
+  padding: 0.5 5%;
+  text-align: center;
 }
 
 header #navbar a {
@@ -267,7 +269,7 @@ th {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  border-radius: 2rem;
+  border-radius: rem;
 }
 
 .comments .row .image {
@@ -407,8 +409,13 @@ h2 {
     flex: 2 0px;
   }
 }
+@media (max-width: 1093px) {
+  .home {
+    padding-top: 20%;
+  }
+}
 
-@media (max-width: 830px) {
+@media (max-width: 805px) {
   html {
     font-size: 55%;
   }
@@ -446,6 +453,9 @@ h2 {
     border: 0.2rem solid rgba(red, green, blue, 0.1);
     border-left: 0.5rem solid var(--red);
     background: #c5c5c5;
+  }
+  .home {
+    padding-top: 20%;
   }
 }
 
