@@ -87,6 +87,10 @@ header .logo i {
   color: #161615;
 }
 
+header img {
+  height: 100px;
+}
+
 header #navbar a {
   font-size: 2rem;
   margin-left: 2rem;
@@ -147,7 +151,7 @@ header #navbar a:hover {
   text-align: center;
   font-size: 3.5rem;
   padding: 1rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   word-spacing: 5px;
 }
 
@@ -263,8 +267,7 @@ th {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  border-radius: 1.5rem;
-  height: 500px;
+  border-radius: 2rem;
 }
 
 .comments .row .image {
