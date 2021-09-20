@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background: #c7c4be;
+  background: #acaaaa;
 }
 
 section {
@@ -140,13 +140,15 @@ header #navbar a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
-  background-color: #c5c5c5;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
 }
 
 .timeline .content h3 {
   text-align: center;
   font-size: 3.5rem;
   padding: 1rem;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
 }
 
 .timeline .content {
@@ -197,6 +199,9 @@ th {
   letter-spacing: 1.5px;
 }
 
+.specials {
+  background: linear-gradient(to bottom, #868f96, #596164);
+}
 .specials .container {
   display: flex;
   flex-wrap: wrap;
@@ -237,14 +242,9 @@ th {
   color: black;
 }
 
-.specials .container .box .content h4 {
-  font-size: 2.5rem;
-  color: black;
-}
-
 .specials .container .box .content p {
   font-size: 1.6rem;
-  color: rgb(43, 42, 42);
+  color: rgb(232, 223, 223);
   padding: 1rem 0;
 }
 
@@ -263,7 +263,8 @@ th {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  height: 500px;
 }
 
 .comments .row .image {
@@ -271,7 +272,7 @@ th {
 }
 
 .comments .row .image img {
-  height: 100%;
+  height: 450px;
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
