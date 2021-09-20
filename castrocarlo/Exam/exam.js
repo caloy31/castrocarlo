@@ -20,3 +20,13 @@ sumbit.onclick = () => {
     alert("Comment submission cancelled!");
   }
 };
+
+function loader() {
+  document.querySelector(".loader-container").classList.add("fade-out");
+}
+
+function fadeout() {
+  setInterval(loader, 5500);
+}
+
+window.onload = fadeout();
